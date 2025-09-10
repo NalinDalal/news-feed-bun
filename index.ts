@@ -1,5 +1,4 @@
 // News Feed System Implementation in TypeScript with Bun
-// File: index.ts
 
 interface User {
   id: string;
@@ -430,4 +429,3 @@ console.log("POST /v1/posts/like?auth_token=user_1 - Like post");
 // Get feed: curl "http://localhost:3000/v1/me/feed?auth_token=user_2"
 // Follow: curl -X POST "http://localhost:3000/v1/users/follow?auth_token=user_2" -H "Content-Type: application/json" -d '{"targetUserId":"user_1"}'
 // Like: curl -X POST "http://localhost:3000/v1/posts/like?auth_token=user_2" -H "Content-Type: application/json" -d '{"postId":"post_123"}'
-
